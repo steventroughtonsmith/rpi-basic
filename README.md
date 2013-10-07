@@ -14,5 +14,7 @@ References
 ====
 
 https://github.com/SharpCoder/rpi-kernel
+
 https://github.com/jncronin/rpi-boot
+
 http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/
