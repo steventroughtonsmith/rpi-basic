@@ -1,0 +1,340 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		B04A61741730EE7800B6D4BF /* bootstrap.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = bootstrap.S; sourceTree = "<group>"; };
+		B04A61751730EE7800B6D4BF /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		B04A61761730EE7800B6D4BF /* console.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = console.cpp; sourceTree = "<group>"; };
+		B04A61771730EE7800B6D4BF /* console.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = console.h; sourceTree = "<group>"; };
+		B04A61781730EE7800B6D4BF /* gpu2d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gpu2d.cpp; sourceTree = "<group>"; };
+		B04A61791730EE7800B6D4BF /* gpu2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gpu2d.h; sourceTree = "<group>"; };
+		B04A617A1730EE7800B6D4BF /* irq.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = irq.cpp; sourceTree = "<group>"; };
+		B04A617B1730EE7800B6D4BF /* irq.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = irq.S; sourceTree = "<group>"; };
+		B04A617C1730EE7800B6D4BF /* kmain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kmain.cpp; sourceTree = "<group>"; };
+		B04A617E1730EE7800B6D4BF /* linker.ld */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = linker.ld; sourceTree = "<group>"; };
+		B04A617F1730EE7800B6D4BF /* math.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = math.h; sourceTree = "<group>"; };
+		B04A61801730EE7800B6D4BF /* mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mem.h; sourceTree = "<group>"; };
+		B04A61811730EE7800B6D4BF /* meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = meta.h; sourceTree = "<group>"; };
+		B04A61821730EE7800B6D4BF /* raspberrylib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = raspberrylib.cpp; sourceTree = "<group>"; };
+		B04A61831730EE7800B6D4BF /* raspberrylib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = raspberrylib.h; sourceTree = "<group>"; };
+		B04A61851730EF9E00B6D4BF /* bootcode.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = bootcode.bin; sourceTree = "<group>"; };
+		B04A61861730EF9E00B6D4BF /* config.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = config.txt; sourceTree = "<group>"; };
+		B04A61871730EF9E00B6D4BF /* fixup.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = fixup.dat; sourceTree = "<group>"; };
+		B04A61881730EF9E00B6D4BF /* kernel.img */ = {isa = PBXFileReference; lastKnownFileType = file; path = kernel.img; sourceTree = "<group>"; };
+		B04A61891730EF9E00B6D4BF /* start.elf */ = {isa = PBXFileReference; lastKnownFileType = file; path = start.elf; sourceTree = "<group>"; };
+		B04A618C1730EF9E00B6D4BF /* build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = build.sh; sourceTree = "<group>"; };
+		B04A618D1730EF9E00B6D4BF /* make-meta.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "make-meta.sh"; sourceTree = "<group>"; };
+		B04A618E1730EF9E00B6D4BF /* prompt.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = prompt.sh; sourceTree = "<group>"; };
+		B04A618F1730EF9E00B6D4BF /* rpi-build.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = "rpi-build.sh"; sourceTree = "<group>"; };
+		B04A61911730F4FD00B6D4BF /* libcsud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcsud.a; sourceTree = "<group>"; };
+		B04A61921730F59200B6D4BF /* keyboard.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = keyboard.S; sourceTree = "<group>"; };
+		B04A61931730F7AE00B6D4BF /* keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyboard.h; sourceTree = "<group>"; };
+		B0554FBE17FF8AB100EAEC29 /* cpp_enables.S */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = cpp_enables.S; sourceTree = "<group>"; };
+		B088A2251800BC3500D046B5 /* libfs.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfs.a; sourceTree = "<group>"; };
+		B088A2261800BD7300D046B5 /* console_glue.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = console_glue.cpp; sourceTree = "<group>"; };
+		B088A2271800D07D00D046B5 /* sound.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = sound.cpp; sourceTree = "<group>"; };
+		B08971801738906400AE228B /* basic.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = basic.c; sourceTree = "<group>"; };
+		B08971811738906400AE228B /* basic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = basic.h; sourceTree = "<group>"; };
+		B08971821738926600AE228B /* tokenizer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = tokenizer.cpp; sourceTree = "<group>"; };
+		B08971831738926600AE228B /* tokenizer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tokenizer.h; sourceTree = "<group>"; };
+		B08971841738926600AE228B /* ubasic.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ubasic.cpp; sourceTree = "<group>"; };
+		B08971851738926600AE228B /* ubasic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ubasic.h; sourceTree = "<group>"; };
+		B0B2784717FE447A00152066 /* uart.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = uart.cpp; sourceTree = "<group>"; };
+		B0B2784817FE447A00152066 /* uart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = uart.h; sourceTree = "<group>"; };
+		B0CD089F17FDD8E1004EC9F1 /* vga.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = vga.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		B01049911730EE50000A55C1 = {
+			isa = PBXGroup;
+			children = (
+				B089717F1738906400AE228B /* basic */,
+				B04A61901730F4FD00B6D4BF /* lib */,
+				B04A61841730EF9E00B6D4BF /* boot */,
+				B04A618A1730EF9E00B6D4BF /* compile */,
+				B04A61731730EE7800B6D4BF /* code */,
+			);
+			sourceTree = "<group>";
+		};
+		B04A61731730EE7800B6D4BF /* code */ = {
+			isa = PBXGroup;
+			children = (
+				B088A1FC18007AB300D046B5 /* raspberrylib */,
+				B088A1FD18007AEC00D046B5 /* core */,
+				B088A1FB18007AA500D046B5 /* irq */,
+				B088A1F718007A8C00D046B5 /* uart */,
+				B088A1F818007A9200D046B5 /* keyboard */,
+				B088A1FA18007AA100D046B5 /* console */,
+				B088A1F918007A9A00D046B5 /* gpu */,
+				B04A61741730EE7800B6D4BF /* bootstrap.S */,
+				B04A617C1730EE7800B6D4BF /* kmain.cpp */,
+				B088A2261800BD7300D046B5 /* console_glue.cpp */,
+				B088A2271800D07D00D046B5 /* sound.cpp */,
+				B04A617E1730EE7800B6D4BF /* linker.ld */,
+			);
+			path = code;
+			sourceTree = "<group>";
+		};
+		B04A61841730EF9E00B6D4BF /* boot */ = {
+			isa = PBXGroup;
+			children = (
+				B04A61851730EF9E00B6D4BF /* bootcode.bin */,
+				B04A61861730EF9E00B6D4BF /* config.txt */,
+				B04A61871730EF9E00B6D4BF /* fixup.dat */,
+				B04A61881730EF9E00B6D4BF /* kernel.img */,
+				B04A61891730EF9E00B6D4BF /* start.elf */,
+			);
+			path = boot;
+			sourceTree = "<group>";
+		};
+		B04A618A1730EF9E00B6D4BF /* compile */ = {
+			isa = PBXGroup;
+			children = (
+				B04A618C1730EF9E00B6D4BF /* build.sh */,
+				B04A618D1730EF9E00B6D4BF /* make-meta.sh */,
+				B04A618E1730EF9E00B6D4BF /* prompt.sh */,
+				B04A618F1730EF9E00B6D4BF /* rpi-build.sh */,
+			);
+			path = compile;
+			sourceTree = "<group>";
+		};
+		B04A61901730F4FD00B6D4BF /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				B088A2251800BC3500D046B5 /* libfs.a */,
+				B04A61911730F4FD00B6D4BF /* libcsud.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		B088A1F718007A8C00D046B5 /* uart */ = {
+			isa = PBXGroup;
+			children = (
+				B0B2784717FE447A00152066 /* uart.cpp */,
+				B0B2784817FE447A00152066 /* uart.h */,
+			);
+			name = uart;
+			sourceTree = "<group>";
+		};
+		B088A1F818007A9200D046B5 /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B04A61931730F7AE00B6D4BF /* keyboard.h */,
+				B04A61921730F59200B6D4BF /* keyboard.S */,
+			);
+			name = keyboard;
+			sourceTree = "<group>";
+		};
+		B088A1F918007A9A00D046B5 /* gpu */ = {
+			isa = PBXGroup;
+			children = (
+				B0CD089F17FDD8E1004EC9F1 /* vga.h */,
+				B04A61781730EE7800B6D4BF /* gpu2d.cpp */,
+				B04A61791730EE7800B6D4BF /* gpu2d.h */,
+			);
+			name = gpu;
+			sourceTree = "<group>";
+		};
+		B088A1FA18007AA100D046B5 /* console */ = {
+			isa = PBXGroup;
+			children = (
+				B04A61761730EE7800B6D4BF /* console.cpp */,
+				B04A61771730EE7800B6D4BF /* console.h */,
+			);
+			name = console;
+			sourceTree = "<group>";
+		};
+		B088A1FB18007AA500D046B5 /* irq */ = {
+			isa = PBXGroup;
+			children = (
+				B04A617A1730EE7800B6D4BF /* irq.cpp */,
+				B04A617B1730EE7800B6D4BF /* irq.S */,
+			);
+			name = irq;
+			sourceTree = "<group>";
+		};
+		B088A1FC18007AB300D046B5 /* raspberrylib */ = {
+			isa = PBXGroup;
+			children = (
+				B04A61821730EE7800B6D4BF /* raspberrylib.cpp */,
+				B04A61831730EE7800B6D4BF /* raspberrylib.h */,
+			);
+			name = raspberrylib;
+			sourceTree = "<group>";
+		};
+		B088A1FD18007AEC00D046B5 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				B0554FBE17FF8AB100EAEC29 /* cpp_enables.S */,
+				B04A61751730EE7800B6D4BF /* common.h */,
+				B04A617F1730EE7800B6D4BF /* math.h */,
+				B04A61801730EE7800B6D4BF /* mem.h */,
+				B04A61811730EE7800B6D4BF /* meta.h */,
+			);
+			name = core;
+			sourceTree = "<group>";
+		};
+		B089717F1738906400AE228B /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				B08971821738926600AE228B /* tokenizer.cpp */,
+				B08971831738926600AE228B /* tokenizer.h */,
+				B08971841738926600AE228B /* ubasic.cpp */,
+				B08971851738926600AE228B /* ubasic.h */,
+				B08971801738906400AE228B /* basic.c */,
+				B08971811738906400AE228B /* basic.h */,
+			);
+			path = basic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		B01049961730EE50000A55C1 /* rpi-basic */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = build.sh;
+			buildConfigurationList = B01049991730EE50000A55C1 /* Build configuration list for PBXLegacyTarget "rpi-basic" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/sh;
+			buildWorkingDirectory = compile;
+			dependencies = (
+			);
+			name = "rpi-basic";
+			passBuildSettingsInEnvironment = 1;
+			productName = "rpi-kernel";
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		B01049921730EE50000A55C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "High Caffeine Content";
+			};
+			buildConfigurationList = B01049951730EE50000A55C1 /* Build configuration list for PBXProject "rpi-basic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B01049911730EE50000A55C1;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B01049961730EE50000A55C1 /* rpi-basic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		B01049971730EE50000A55C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B01049981730EE50000A55C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B010499A1730EE50000A55C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B010499B1730EE50000A55C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B01049951730EE50000A55C1 /* Build configuration list for PBXProject "rpi-basic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B01049971730EE50000A55C1 /* Debug */,
+				B01049981730EE50000A55C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B01049991730EE50000A55C1 /* Build configuration list for PBXLegacyTarget "rpi-basic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B010499A1730EE50000A55C1 /* Debug */,
+				B010499B1730EE50000A55C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B01049921730EE50000A55C1 /* Project object */;
+}

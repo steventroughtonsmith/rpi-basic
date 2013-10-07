@@ -1,0 +1,4 @@
+# 640x480
+hdmi_group=2
+hdmi_mode=4
+sdtv_mode=2
